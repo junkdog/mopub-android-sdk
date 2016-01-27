@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.mopub.mobileads</groupId>
         <artifactId>mopub-android</artifactId>
-        <version>1.0</version>
+        <version>3.9.0</version>
     </parent>
 
     <artifactId>mopub-sample</artifactId>
@@ -26,7 +26,13 @@
         <dependency>
             <groupId>com.mopub.mobileads</groupId>
             <artifactId>mopub-sdk</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>3.9.0</version>
+            <type>aar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.google.android.gms</groupId>
+            <artifactId>play-services-ads</artifactId>
+            <version>7.0.0</version>
             <type>aar</type>
         </dependency>
 
@@ -37,23 +43,18 @@
             <type>aar</type>
         </dependency>
 
+	    <!--
+		-->
         <dependency>
             <groupId>com.android.support</groupId>
             <artifactId>recyclerview-v7</artifactId>
             <version>22.0.0</version>
             <type>aar</type>
         </dependency>
-        
-        <dependency>
-            <groupId>com.google.android.gms</groupId>
-            <artifactId>play-services-ads</artifactId>
-            <version>7.0.0</version>
-            <type>aar</type>
-        </dependency>
 
-        <dependency> <groupId>com.google.android</groupId>
+        <dependency> <groupId>android</groupId>
             <artifactId>android</artifactId>
-            <version>4.4.2</version>
+            <version>4.4.2_r4</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -97,6 +98,16 @@
                     <undeployBeforeDeploy>true</undeployBeforeDeploy>
                 </configuration>
                 <extensions>true</extensions>
+				<executions>
+					<execution>
+						<id>deploy-on-install</id>
+						<phase>install</phase>
+						<goals>
+							<goal>deploy</goal>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
             </plugin>
         </plugins>
     </build>

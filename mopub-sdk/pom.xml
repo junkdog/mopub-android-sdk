@@ -6,11 +6,10 @@
     <parent>
         <groupId>com.mopub.mobileads</groupId>
         <artifactId>mopub-android</artifactId>
-        <version>1.0</version>
+        <version>3.9.0</version>
     </parent>
 
     <artifactId>mopub-sdk</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
     <packaging>aar</packaging>
     <name>MoPub SDK</name>
     <description>The SDK for MoPub developers.</description>
@@ -53,9 +52,9 @@
 
         <!--android & oobolectric-->
         <dependency>
-            <groupId>com.google.android</groupId>
+            <groupId>android</groupId>
             <artifactId>android</artifactId>
-            <version>4.4.2</version>
+            <version>4.4.2_r4</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

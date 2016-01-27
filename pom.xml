@@ -12,7 +12,7 @@
 
     <groupId>com.mopub.mobileads</groupId>
     <artifactId>mopub-android</artifactId>
-    <version>1.0</version>
+    <version>3.9.0</version>
     <packaging>pom</packaging>
 
     <repositories>
