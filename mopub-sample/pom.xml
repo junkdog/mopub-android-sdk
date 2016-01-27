@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.mopub.mobileads</groupId>
         <artifactId>mopub-android</artifactId>
-        <version>3.9.0</version>
+        <version>4.3.0</version>
     </parent>
 
     <artifactId>mopub-sample</artifactId>
@@ -26,7 +26,7 @@
         <dependency>
             <groupId>com.mopub.mobileads</groupId>
             <artifactId>mopub-sdk</artifactId>
-            <version>3.9.0</version>
+            <version>4.3.0</version>
             <type>aar</type>
         </dependency>
         <dependency>
